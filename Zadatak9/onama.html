@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catering Osrečki - O nama">
+    <meta name="keywords" content="">
+    <meta name="author" content="Matej Osrečki">   
+    <title>O nama - Catering Osrečki</title>
+
+    <!-- Dodajemo link za FontAwesome ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+            padding: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        h2 {
+            width: 100%; /* Centriranje teksta */
+        }
+
+        figure {
+            margin: 10px;
+            flex: 0 0 calc(50% - 20px);
+            display: inline-block;
+            text-align: center;
+            border: 2px solid #ddd; /* Obrub oko slike i opisa */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        figure img {
+            width: 50%; /* Postavljanje širine slike na 100% unutar roditeljskog elementa */
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        figure img:hover {
+            transform: scale(1.1);
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/hrana.jpg" alt="Hrana">
+        <h1>Catering Osrečki</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="novosti.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="onama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+    </nav>
+
+    <main>
+        <h2>O nama</h2>
+
+        <p>
+            Catering Osrečki je obiteljski posao koji se bavi pružanjem vrhunske usluge dostave hrane direktno na vašu adresu.
+            Već dugi niz godina posvećeni smo zadovoljenju vaših gastronomskih potreba, nudeći raznolika jela pripremljena
+            s ljubavlju i pažnjom prema svježim sastojcima.
+        </p>
+
+        <p>
+            Naš tim kuhara strastveno radi na stvaranju okusa koji će zadovoljiti i najzahtjevnija nepca. Kroz suradnju s lokalnim
+            dobavljačima, uvijek se trudimo koristiti svježe i visokokvalitetne namirnice. Nudimo širok spektar jelovnika prilagođenih
+            različitim prigodama, bilo da je riječ o obiteljskim okupljanjima, poslovnim događanjima ili posebnim svečanostima.
+        </p>
+
+        <p>
+            Naša misija je pružiti vam ne samo ukusno jelo, već i jedinstveno iskustvo. Bilo da se odlučite posjetiti nas u
+            restoranu ili iskoristiti uslugu dostave, trudimo se stvoriti trenutke u kojima uživate u vrhunskoj hrani i ugodnom
+            ambijentu.
+        </p>
+
+
+        <div class="video-container">
+            <video controls>
+                <source src="video/catering-video.mp4" type="video/mp4">
+                Vaš preglednik ne podržava video tag.
+            </video>
+        </div>
+    </main>
+    <br><br><br>
+    <footer>
+        &copy; Matej Osrečki | <a href="https://github.com/mmxmatej/Projektni-zadatak-html-css" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </footer>
+</body>
+</html>
