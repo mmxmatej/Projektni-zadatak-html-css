@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerija slika">
+    <meta name="keywords" content="">
+    <meta name="author" content="Matej Osrečki">   
+    <title>Galerija - Catering Osrečki</title>
+
+    <!-- Dodajemo link za FontAwesome ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+            padding: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        h2 {
+            width: 100%; /* Centriranje teksta */
+        }
+
+        figure {
+            margin: 10px;
+            flex: 0 0 calc(50% - 20px);
+            display: inline-block;
+            text-align: center;
+            border: 2px solid #ddd; /* Obrub oko slike i opisa */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        figure img {
+            width: 50%; /* Postavljanje širine slike na 100% unutar roditeljskog elementa */
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        figure img:hover {
+            transform: scale(1.1);
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/hrana.jpg" alt="Hrana">
+        <h1>Catering Osrečki</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="novosti.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="#">O nama</a>
+        <a href="galerija.html">Galerija</a>
+    </nav>
+
+    <main>
+        <h2>Galerija Slika</h2>
+
+        <figure>
+            <a href="img/slika1.jpg" target="_blank">
+                <img src="img/slika1.jpg" alt="Svježa Salata">
+            </a>
+            <figcaption>Svježa salata s domaćim umakom</figcaption>
+        </figure>
+
+        <figure>
+            <a href="img/slika2.jpg" target="_blank">
+                <img src="img/slika2.jpg" alt="Piletina s povrćem">
+            </a>
+            <figcaption>Piletina sa sezonskim povrćem</figcaption>
+        </figure>
+
+        <figure>
+            <a href="img/slika3.jpg" target="_blank">
+                <img src="img/slika3.jpg" alt="Lignje na žaru">
+            </a>
+            <figcaption>Lignje na žaru s aromatičnim začinima</figcaption>
+        </figure>
+
+        <figure>
+            <a href="img/slika4.jpg" target="_blank">
+                <img src="img/slika4.jpg" alt="Desertna kreacija">
+            </a>
+            <figcaption>Desertna kreacija - savršen završetak obroka</figcaption>
+        </figure>
+
+        <figure>
+            <a href="img/slika5.jpg" target="_blank">
+                <img src="img/slika5.jpg" alt="Riba s roštilja">
+            </a>
+            <figcaption>Svježe ulovljena riba s roštilja</figcaption>
+        </figure>
+
+        <figure>
+            <a href="img/slika6.jpg" target="_blank">
+                <img src="img/slika6.jpg" alt="Vegetarijanska pizza">
+            </a>
+            <figcaption>Vegetarijanska pizza s raznovrsnim povrćem</figcaption>
+        </figure>
+
+        <figure>
+            <a href="img/slika7.jpg" target="_blank">
+                <img src="img/slika7.jpg" alt="Morski plodovi">
+            </a>
+            <figcaption>Morski plodovi na tanjuru - delicija iz mora</figcaption>
+        </figure>
+
+        <figure>
+            <a href="img/slika8.jpg" target="_blank">
+                <img src="img/slika8.jpg" alt="Slatkiši">
+            </a>
+            <figcaption>Raznovrsni slatkiši za sladokusce</figcaption>
+        </figure>
+
+        <figure>
+            <a href="img/slika9.jpg" target="_blank">
+                <img src="img/slika9.jpg" alt="Roštilj na otvorenom">
+            </a>
+            <figcaption>Roštilj na otvorenom - uživanje u prirodi</figcaption>
+        </figure>
+
+        <figure>
+            <a href="img/slika10.jpg" target="_blank">
+                <img src="img/slika10.jpg" alt="Kremasta torta">
+            </a>
+            <figcaption>Kremasta torta s voćem - savršen završetak obroka</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        &copy; Matej Osrečki | <a href="https://github.com/mmxmatej/Projektni-zadatak-html-css" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </footer>
+</body>
+</html>
